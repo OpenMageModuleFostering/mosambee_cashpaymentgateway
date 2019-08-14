@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package>
     <name>Mosambee_CashPaymentGateway</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
     <license uri="http://opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
     <channel>community</channel>
     <extends/>
-    <summary>Mosambee.Cash Payemt gateway provide wallets payment.</summary>
+    <summary>Provide wallet payment service in magento store.</summary>
     <description>Mosambee.Cash Wallet Payment Gateway provides all the popular wallets (PayU Money, Citrus, Mom, Atom, Idea Money, Vodafone mPesa, MobiKwik etc.) payment functionality on Magento CE e-commerce store.</description>
-    <notes>wallet payment gateway for mosambee.cash.</notes>
-    <authors><author><name>Mosambee</name><user>mosambeecash</user><email>magento@mosambee.in</email></author><author><name>Satyendra kumar Singh</name><user>singhsatyendra</user><email>satyendrasingh971@gmail.com</email></author></authors>
-    <date>2016-04-01</date>
-    <time>09:08:53</time>
-    <contents><target name="magecommunity"><dir name="Mosambee"><dir name="CashPaymentGateway"><dir name="Helper"><file name="Data.php" hash="bc5b29219d0c04141f74552d5dde239b"/></dir><dir name="Model"><file name="Standard.php" hash="36cb44b920bdb52f94c1a62a780cfa2c"/></dir><dir name="controllers"><file name="StandardController.php" hash="1e65f3005d12a6d8dcb1385dae794faf"/></dir><dir name="etc"><file name="config.xml" hash="c134896825626d7fd5d1a37b1b01d4b3"/><file name="system.xml" hash="3694fe490e5ee748bbc39a0d39887253"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Mosambee_CashPaymentGateway.xml" hash="9d2a2edb1037157f9cff6177de5b8888"/></dir></target><target name="mageweb"><dir name="app"><dir name="design"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="cashpaymentgateway"><file name="redirect.phtml" hash="519e35b9c7543613ed3e7c7999000145"/></dir></dir></dir></dir></dir></dir></dir></target></contents>
+    <notes>wallet payment gateway for magento store by mosambee.cash</notes>
+    <authors><author><name>Mosambee Cash</name><user>mosambeecash</user><email>techsupport@mosambee.in</email></author><author><name>Satyendra kumar Singh</name><user>singhsatyendra</user><email>satyendrasingh971@gmail.com</email></author></authors>
+    <date>2016-04-02</date>
+    <time>08:46:15</time>
+    <contents><target name="magecommunity"><dir name="Mosambee"><dir name="CashPaymentGateway"><dir name="Helper"><file name="Data.php" hash="bc5b29219d0c04141f74552d5dde239b"/></dir><dir name="Model"><file name="Standard.php" hash="36cb44b920bdb52f94c1a62a780cfa2c"/></dir><dir name="controllers"><file name="StandardController.php" hash="1e65f3005d12a6d8dcb1385dae794faf"/></dir><dir name="etc"><file name="config.xml" hash="c0fffb38289627ee5de2e4fd4f69175b"/><file name="system.xml" hash="abbdb3bda3effff5e2b73094f3f94c67"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Mosambee_CashPaymentGateway.xml" hash="9d2a2edb1037157f9cff6177de5b8888"/></dir></target><target name="mageweb"><dir name="app"><dir name="design"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="cashpaymentgateway"><file name="redirect.phtml" hash="0f9ec29a932400c5a3c1df0a4fd51f4c"/></dir></dir></dir></dir></dir></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

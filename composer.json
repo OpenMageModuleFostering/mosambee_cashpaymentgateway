@@ -3,11 +3,11 @@
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
-    "description": "Mosambee.Cash Payemt gateway provide wallets payment.",
+    "description": "Provide wallet payment service in magento store.",
     "authors": [
     {
-        "name": "Mosambee",
-        "email": "magento@mosambee.in"
+        "name": "Mosambee Cash",
+        "email": "techsupport@mosambee.in"
     }
 ],
     "suggest": {

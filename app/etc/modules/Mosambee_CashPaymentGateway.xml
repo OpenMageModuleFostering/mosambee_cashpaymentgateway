@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mosambee_CashPaymentGateway>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Mosambee_CashPaymentGateway>
+    </modules>
+</config>

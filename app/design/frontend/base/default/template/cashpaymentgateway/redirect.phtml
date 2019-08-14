@@ -1,0 +1,42 @@
+<?php
+	// Get Custom card Details
+	$customcard = Mage::registry( 'customcard' );
+?>
+	<!-- Notify user if browser not support javascript  -->
+<noscript>
+    Sorry! Your browser dosn't supoort javascript, try to use different browser or enable javascript in your web browser.
+</noscript>
+
+<form name="customcardform" id="name="customcardform"" method="post" action="<?php echo $customcard['action']; ?>">
+    <!-- Required Parameters -->
+	<input type="hidden" name="merchant_id" value="<?php echo $customcard['merchant_id']; ?>">	
+	<input type="hidden" name="total_amount" value="<?php echo $customcard['total_amount']; ?>">
+	<input type="hidden" name="order_id" value="<?php echo $customcard['order_id']; ?>">	
+	<input type="hidden" name="request_signature" value="<?php echo $customcard['request_signature']; ?>">		
+	<input type="hidden" name="redirect_url" value="<?php echo $customcard['redirect_url']; ?>">
+	<!-- ### END Required Parameters -->
+	
+	<!-- Billing details -->
+	<input type="hidden" name="billing_cust_name" value="<?php echo $customcard['billing_cust_name']; ?>"> 
+	<input type="hidden" name="billing_cust_address" value="<?php echo $customcard['billing_cust_address']; ?>"> 
+	<input type="hidden" name="billing_cust_state" value="<?php echo $customcard['billing_cust_state']; ?>"> 
+	<input type="hidden" name="billing_cust_country" value="<?php echo $customcard['billing_cust_country']; ?>"> 
+	<input type="hidden" name="billing_cust_city" value="<?php echo $customcard['billing_city']; ?>"> 
+	<input type="hidden" name="billing_zip_code" value="<?php echo $customcard['billing_zip']; ?>"> 
+	<input type="hidden" name="billing_cust_tel" value="<?php echo $customcard['billing_cust_tel']; ?>"> 
+	<input type="hidden" name="billing_cust_email" value="<?php echo $customcard['billing_cust_email']; ?>">
+	<!-- ### END Billing details -->
+	<!-- Delivery Details -->
+	<input type="hidden" name="delivery_cust_name" value="<?php echo $customcard['delivery_cust_name']; ?>"> 
+	<input type="hidden" name="delivery_cust_address" value="<?php echo $customcard['delivery_cust_address']; ?>"> 
+	<input type="hidden" name="delivery_cust_state" value="<?php echo $customcard['delivery_cust_state']; ?>"> 
+	<input type="hidden" name="delivery_cust_country" value="<?php echo $customcard['delivery_cust_country']; ?>">		
+	<input type="hidden" name="delivery_cust_city" value="<?php echo $customcard['delivery_city']; ?>"> 
+	<input type="hidden" name="delivery_cust_tel" value="<?php echo $customcard['delivery_cust_tel']; ?>">	
+	<input type="hidden" name="delivery_zip_code" value="<?php echo $customcard['delivery_zip']; ?>"> 
+	<!-- ### END Delivery Details -->
+</form>
+<!-- Script to submit form -->
+<script type="text/javascript">     
+    document.customcardform.submit();
+</script>

@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<Mosambee_CashPaymentGateway>
+			<version>1.0.0</version>
+		</Mosambee_CashPaymentGateway>
+	</modules>
+	<global>
+		<helpers>
+			<cashpaymentgateway>
+				<class>Mosambee_CashPaymentGateway_Helper</class>
+			</cashpaymentgateway>
+		</helpers>
+		<models>
+			<cashpaymentgateway>
+				<class>Mosambee_CashPaymentGateway_Model</class>
+			</cashpaymentgateway>
+		</models>
+		<resources>
+			<cashpaymentgateway_setup>
+				<setup>
+					<module>Mosambee_CashPaymentGateway</module>
+				</setup>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</cashpaymentgateway_setup>
+			<cashpaymentgateway_read>
+				<connection>
+					<use>core_read</use>
+				</connection>
+			</cashpaymentgateway_read>
+			<cashpaymentgateway_write>
+				<connection>
+					<use>core_write</use>
+				</connection>
+			</cashpaymentgateway_write>
+		</resources>
+		<fieldsets>
+             <sales_convert_quote_payment>
+                <check_no>
+                    <to_order_payment>*</to_order_payment>
+                </check_no>
+                <check_date>
+                    <to_order_payment>*</to_order_payment>
+                </check_date>
+             </sales_convert_quote_payment>
+        </fieldsets>
+	</global>
+	<frontend>
+	<routers>
+			<cashpaymentgateway>
+				<use>standard</use>
+				<args>
+					<module>Mosambee_CashPaymentGateway</module>
+					<frontName>customcard</frontName>
+				</args>
+			</cashpaymentgateway>
+		</routers>
+	</frontend>
+	<default>
+		<payment>
+           <cashpaymentgateway_checkout>
+                <active>1</active>
+                <model>cashpaymentgateway/standard</model>
+                <order_status>processing</order_status>
+                <title>Mosambee.Cash Wallet Payment</title>
+				<payment_action>sale</payment_action>
+				<submit_url> </submit_url>
+				<merchant_id> </merchant_id>
+				<merchant_password> </merchant_password>
+				<allowspecific>0</allowspecific>
+				<sort_order>1</sort_order>
+            </cashpaymentgateway_checkout>
+         </payment>
+	</default>
+</config>

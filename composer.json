@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Mosambee_CashPaymentGateway",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "Mosambee.Cash Payemt gateway provide wallets payment.",
+    "authors": [
+    {
+        "name": "Mosambee",
+        "email": "magento@mosambee.in"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Mosambee_CashPaymentGateway",
+    "name": "OpenMageModuleFostering\/Mosambee_CashPaymentGateway",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
     "description": "Provide wallet payment service in magento store.",
     "authors": [
-    {
-        "name": "Mosambee Cash",
-        "email": "techsupport@mosambee.in"
-    }
-],
+        {
+            "name": "Mosambee Cash",
+            "email": "techsupport@mosambee.in"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
